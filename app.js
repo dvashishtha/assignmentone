@@ -21,7 +21,7 @@ function LunchCheckController($scope) {
       var num = 0;
       //check if any entry is null in the input
       for (var i = 0; i < arr.length; i++) {
-        if (arr[i]) {
+        if (arr[i].trim().length != 0) {
           num = num + 1;
         }
       }
